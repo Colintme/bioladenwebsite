@@ -216,7 +216,10 @@
     background:var(--cream);border:1px solid var(--line);border-radius:20px;padding:.5em 1.1em;
     font-size:.8rem;color:var(--forest);
   }
-  .prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;margin-bottom:2.6rem;}
+  .prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;margin-bottom:1.8rem;}
+  .prod-card.more-item{display:none;}
+  .prod-grid.expanded .prod-card.more-item{display:block;}
+  .show-more-wrap{text-align:center;margin-bottom:2.6rem;}
   .prod-card{background:var(--cream);border:1px solid var(--line);border-radius:16px;overflow:hidden;position:relative;transition:transform .2s,box-shadow .2s;}
   .prod-card:hover{transform:translateY(-3px);box-shadow:0 16px 28px -16px rgba(35,56,33,.22);}
   .prod-card .sale-tag{font-size:.58rem;padding:.3em .6em;top:.7em;right:.7em;}
@@ -586,487 +589,492 @@
         <div class="shot"><img src="images/nocciolata-bianca-250g.webp" alt="Nocciolata Bianca Haselnuss-Nougat, 250g" loading="lazy"></div>
         <div class="body"><h4>Nocciolata Bianca Haselnuss-Nougat, 250g</h4><div class="price-row"><span class="price">6,49&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/delikatess-mayonnaise-250ml.webp" alt="Delikatess Mayonnaise, 250ml" loading="lazy"></div>
         <div class="body"><h4>Delikatess Mayonnaise, 250ml</h4><div class="price-row"><span class="price">3,79&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/thunfisch-filets-185g.webp" alt="Thunfisch Filets im eigenen Saft, 185g" loading="lazy"></div>
         <div class="body"><h4>Thunfisch Filets im eigenen Saft, 185g</h4><div class="price-row"><span class="price">3,99&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/dunkle-nougat-gianduja-80g.webp" alt="Dunkle Nougat Gianduja Schokolade, 80g" loading="lazy"></div>
         <div class="body"><h4>Dunkle Nougat Gianduja Schokolade, 80g</h4><div class="price-row"><span class="price">2,99&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <span class="sale-tag">Sale</span>
         <div class="shot"><img src="images/sauerkirsche-fruchtgarten-225g.webp" alt="Sauerkirsche Fruchtgarten, 225g" loading="lazy"></div>
         <div class="body"><h4>Sauerkirsche Fruchtgarten, 225g</h4><div class="price-row"><span class="price">3,79&nbsp;€</span><span class="price-old">3,99&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/natur-radler-05l.webp" alt="Riedenburger Natur Radler, 0,5L" loading="lazy"></div>
         <div class="body"><h4>Riedenburger Natur Radler, 0,5L</h4><div class="price-row"><span class="price">1,89&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/demeter-zitronensaft-02l.webp" alt="Demeter Zitronensaft, 0,2L" loading="lazy"></div>
         <div class="body"><h4>Demeter Zitronensaft, 0,2L</h4><div class="price-row"><span class="price">1,89&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/lakritz-wheel-100g.webp" alt="Wheel, 100g" loading="lazy"></div>
         <div class="body"><h4>Wheel, 100g</h4><div class="price-row"><span class="price">2,19&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/lammsbraeu-naturradler-033l.webp" alt="Lammsbräu Bio Naturradler, 0,33L" loading="lazy"></div>
         <div class="body"><h4>Lammsbräu Bio Naturradler, 0,33L</h4><div class="price-row"><span class="price">1,39&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/now-fresh-lemon-033l.webp" alt="now Fresh Lemon, 0,33L" loading="lazy"></div>
         <div class="body"><h4>now Fresh Lemon, 0,33L</h4><div class="price-row"><span class="price">1,39&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/gelierzucker-500g.webp" alt="Gelierzucker 2:1, 500g" loading="lazy"></div>
         <div class="body"><h4>Gelierzucker 2:1, 500g</h4><div class="price-row"><span class="price">3,29&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/tomatensauce-knoblauch-thymian-340g.webp" alt="bioladen* Tomatensauce Knoblauch Thymian, 340g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Tomatensauce Knoblauch Thymian, 340g</h4><div class="price-row"><span class="price">2,49&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/fruehstueckssaft-07l.webp" alt="bioladen* Frühstückssaft, 0,7L" loading="lazy"></div>
         <div class="body"><h4>bioladen* Frühstückssaft, 0,7L</h4><div class="price-row"><span class="price">3,49&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/coco-water-1000ml.webp" alt="Coco Water Pur, 1000ml" loading="lazy"></div>
         <div class="body"><h4>Coco Water Pur, 1000ml</h4><div class="price-row"><span class="price">5,19&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/schwarzkuemmeloel-250ml.webp" alt="Schwarzkümmelöl nativ, 250ml" loading="lazy"></div>
         <div class="body"><h4>Schwarzkümmelöl nativ, 250ml</h4><div class="price-row"><span class="price">18,99&nbsp;€</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/riedenburger-historisches-emmerbier-0-5l.webp" alt="Riedenburger Historisches Emmerbier 0,5L" loading="lazy"></div>
         <div class="body"><h4>Riedenburger Historisches Emmerbier 0,5L</h4><div class="price-row"><span class="price">2,09&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-dinkel-fusilli-hell-500g.webp" alt="bioladen* Dinkel Fusilli hell, 500g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Dinkel Fusilli hell, 500g</h4><div class="price-row"><span class="price">2,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-feigenkonfituere-extra-240g.webp" alt="bioladen* Feigenkonfitüre extra, 240g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Feigenkonfitüre extra, 240g</h4><div class="price-row"><span class="price">4,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-ananasstuecke-665g.webp" alt="bioladen* Ananasstücke 665g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Ananasstücke 665g</h4><div class="price-row"><span class="price">7,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/haferdrink-natural-1l.webp" alt="Haferdrink Natural, 1L" loading="lazy"></div>
         <div class="body"><h4>Haferdrink Natural, 1L</h4><div class="price-row"><span class="price">2,39&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/apfelschorle-0-5l.webp" alt="Apfelschorle 0,5L" loading="lazy"></div>
         <div class="body"><h4>Apfelschorle 0,5L</h4><div class="price-row"><span class="price">1,69&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-tomatenmark-200g.webp" alt="bioladen* Tomatenmark, 200g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Tomatenmark, 200g</h4><div class="price-row"><span class="price">1,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/vegane-art-leberwurst-mit-roestzwiebeln-140g.webp" alt="Vegane Art Leberwurst mit Röstzwiebeln, 140g" loading="lazy"></div>
         <div class="body"><h4>Vegane Art Leberwurst mit Röstzwiebeln, 140g</h4><div class="price-row"><span class="price">3,69&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/wunderbrod-600g.webp" alt="Wunderbrod 600g" loading="lazy"></div>
         <div class="body"><h4>Wunderbrod 600g</h4><div class="price-row"><span class="price">4,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-dinkel-spaghetti-500g.webp" alt="bioladen* Dinkel Spaghetti 500g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Dinkel Spaghetti 500g</h4><div class="price-row"><span class="price">2,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/moehrensaft-feldfrisch-0-7l.webp" alt="Möhrensaft feldfrisch 0,7L" loading="lazy"></div>
         <div class="body"><h4>Möhrensaft feldfrisch 0,7L</h4><div class="price-row"><span class="price">3,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/chiasamen-450g.webp" alt="Chiasamen 450g" loading="lazy"></div>
         <div class="body"><h4>Chiasamen 450g</h4><div class="price-row"><span class="price">6,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-tomaten-paprikamark-200g.webp" alt="bioladen* Tomaten-Paprikamark, 200g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Tomaten-Paprikamark, 200g</h4><div class="price-row"><span class="price">2,29&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-huehnerbruehe-mit-huehnerfleisch-400ml.webp" alt="bioladen* Hühnerbrühe mit Hühnerfleisch, 400ml" loading="lazy"></div>
         <div class="body"><h4>bioladen* Hühnerbrühe mit Hühnerfleisch, 400ml</h4><div class="price-row"><span class="price">6,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/rote-bete-340g.webp" alt="Rote Bete 340g" loading="lazy"></div>
         <div class="body"><h4>Rote Bete 340g</h4><div class="price-row"><span class="price">2,19&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/snaeckebrot-sesam-dinkel-200g.webp" alt="Snäckebrot Sesam &amp; Dinkel, 200g" loading="lazy"></div>
         <div class="body"><h4>Snäckebrot Sesam &amp; Dinkel, 200g</h4><div class="price-row"><span class="price">3,29&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/gulaschsuppe-mit-rindfleisch-400g.webp" alt="Gulaschsuppe mit Rindfleisch, 400g" loading="lazy"></div>
         <div class="body"><h4>Gulaschsuppe mit Rindfleisch, 400g</h4><div class="price-row"><span class="price">4,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/weisse-bohnen-demeter-350g.webp" alt="Weiße Bohnen Demeter, 350g" loading="lazy"></div>
         <div class="body"><h4>Weiße Bohnen Demeter, 350g</h4><div class="price-row"><span class="price">2,19&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/pesto-rosso-130g.webp" alt="Pesto Rosso 130g" loading="lazy"></div>
         <div class="body"><h4>Pesto Rosso 130g</h4><div class="price-row"><span class="price">2,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-cranberries-getrocknet-gesuesst-200g.webp" alt="bioladen* Cranberries getrocknet &amp; gesüßt, 200g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Cranberries getrocknet &amp; gesüßt, 200g</h4><div class="price-row"><span class="price">6,29&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/erbsen-demeter-350g.webp" alt="Erbsen Demeter 350g" loading="lazy"></div>
         <div class="body"><h4>Erbsen Demeter 350g</h4><div class="price-row"><span class="price">2,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-leinsamen-500g.webp" alt="bioladen* Leinsamen, 500g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Leinsamen, 500g</h4><div class="price-row"><span class="price">3,29&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bauernspaetzle-hell-demeter-500g.webp" alt="Bauernspätzle hell demeter, 500g" loading="lazy"></div>
         <div class="body"><h4>Bauernspätzle hell demeter, 500g</h4><div class="price-row"><span class="price">3,19&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/apfelmus-700g.webp" alt="Apfelmus 700g" loading="lazy"></div>
         <div class="body"><h4>Apfelmus 700g</h4><div class="price-row"><span class="price">3,29&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/lammsbraeu-bio-pils-0-5l.webp" alt="Lammsbräu Bio Pils 0,5L" loading="lazy"></div>
         <div class="body"><h4>Lammsbräu Bio Pils 0,5L</h4><div class="price-row"><span class="price">1,79&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/vollmilch-schokolade-ganznuss-100g.webp" alt="Vollmilch Schokolade GanzNuss, 100g" loading="lazy"></div>
         <div class="body"><h4>Vollmilch Schokolade GanzNuss, 100g</h4><div class="price-row"><span class="price">3,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/omega-red-leinoel-mixtur-100ml.webp" alt="Omega Red Leinöl-Mixtur, 100ml" loading="lazy"></div>
         <div class="body"><h4>Omega Red Leinöl-Mixtur, 100ml</h4><div class="price-row"><span class="price">7,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/feine-bitter-schokolade-85-cacao-80g.webp" alt="Feine Bitter Schokolade 85% Cacao, 80g" loading="lazy"></div>
         <div class="body"><h4>Feine Bitter Schokolade 85% Cacao, 80g</h4><div class="price-row"><span class="price">3,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <span class="sale-tag">Sale</span>
         <div class="shot"><img src="images/zuckermais-350g.webp" alt="Zuckermais 350g" loading="lazy"></div>
         <div class="body"><h4>Zuckermais 350g</h4><div class="price-row"><span class="price">1,69&nbsp;&euro;</span><span class="price-old">2,19&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/kichererbsen-350g.webp" alt="Kichererbsen 350g" loading="lazy"></div>
         <div class="body"><h4>Kichererbsen 350g</h4><div class="price-row"><span class="price">2,19&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/zwiebelschmelz-150g.webp" alt="Zwiebelschmelz 150g" loading="lazy"></div>
         <div class="body"><h4>Zwiebelschmelz 150g</h4><div class="price-row"><span class="price">3,29&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/zimt-ceylon-gemahlen-40g.webp" alt="Zimt Ceylon, gemahlen 40g" loading="lazy"></div>
         <div class="body"><h4>Zimt Ceylon, gemahlen 40g</h4><div class="price-row"><span class="price">2,79&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-schoko-crunch-500g.webp" alt="bioladen* Schoko Crunch, 500g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Schoko Crunch, 500g</h4><div class="price-row"><span class="price">4,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-agavendicksaft-im-spender-500g.webp" alt="bioladen* Agavendicksaft im Spender, 500g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Agavendicksaft im Spender, 500g</h4><div class="price-row"><span class="price">4,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/multi-natur-0-7l.webp" alt="Multi Natur 0,7L" loading="lazy"></div>
         <div class="body"><h4>Multi Natur 0,7L</h4><div class="price-row"><span class="price">4,09&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <span class="sale-tag">Sale</span>
         <div class="shot"><img src="images/feigen-senf-125ml.webp" alt="Feigen Senf, 125ml" loading="lazy"></div>
         <div class="body"><h4>Feigen Senf, 125ml</h4><div class="price-row"><span class="price">2,99&nbsp;&euro;</span><span class="price-old">3,29&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-mangopueree-350g.webp" alt="bioladen* Mangopüree, 350g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Mangopüree, 350g</h4><div class="price-row"><span class="price">3,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-gemuesefond-400ml.webp" alt="bioladen* Gemüsefond, 400ml" loading="lazy"></div>
         <div class="body"><h4>bioladen* Gemüsefond, 400ml</h4><div class="price-row"><span class="price">4,29&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-rinderfond-400ml.webp" alt="bioladen* Rinderfond 400ml" loading="lazy"></div>
         <div class="body"><h4>bioladen* Rinderfond 400ml</h4><div class="price-row"><span class="price">4,29&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/hafer-drink-naturell-1l.webp" alt="Hafer Drink Naturell, 1L" loading="lazy"></div>
         <div class="body"><h4>Hafer Drink Naturell, 1L</h4><div class="price-row"><span class="price">2,29&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/brot-chips-salz-100g.webp" alt="Brot Chips - Salz, 100g" loading="lazy"></div>
         <div class="body"><h4>Brot Chips - Salz, 100g</h4><div class="price-row"><span class="price">2,19&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/dattel-schokolade-dunkel-72-85g.webp" alt="Dattel Schokolade Dunkel 72%, 85g" loading="lazy"></div>
         <div class="body"><h4>Dattel Schokolade Dunkel 72%, 85g</h4><div class="price-row"><span class="price">4,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/dattel-schokolade-nougat-50-85g.webp" alt="Dattel Schokolade Nougat 50%, 85g" loading="lazy"></div>
         <div class="body"><h4>Dattel Schokolade Nougat 50%, 85g</h4><div class="price-row"><span class="price">5,29&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <span class="sale-tag">Sale</span>
         <div class="shot"><img src="images/lammsbraeu-bio-hell-0-5l.webp" alt="Lammsbräu Bio Hell 0,5L" loading="lazy"></div>
         <div class="body"><h4>Lammsbräu Bio Hell 0,5L</h4><div class="price-row"><span class="price">1,49&nbsp;&euro;</span><span class="price-old">1,79&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/mein-crunchy-mandel-nuss-400g.webp" alt="Mein Crunchy Mandel-Nuss, 400g" loading="lazy"></div>
         <div class="body"><h4>Mein Crunchy Mandel-Nuss, 400g</h4><div class="price-row"><span class="price">4,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/dattel-schokolade-dunkle-mandel-68-85g.webp" alt="Dattel Schokolade Dunkle Mandel 68%, 85g" loading="lazy"></div>
         <div class="body"><h4>Dattel Schokolade Dunkle Mandel 68%, 85g</h4><div class="price-row"><span class="price">4,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/dinkel-spiralen-hell-500g.webp" alt="Dinkel Spiralen hell, 500g" loading="lazy"></div>
         <div class="body"><h4>Dinkel Spiralen hell, 500g</h4><div class="price-row"><span class="price">3,29&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/rotkohl-demeter-680g.webp" alt="Rotkohl Demeter, 680g" loading="lazy"></div>
         <div class="body"><h4>Rotkohl Demeter, 680g</h4><div class="price-row"><span class="price">2,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/lammsbraeu-bio-pils-zzzisch-0-33l.webp" alt="Lammsbräu Bio Pils Zzzisch 0,33L" loading="lazy"></div>
         <div class="body"><h4>Lammsbräu Bio Pils Zzzisch 0,33L</h4><div class="price-row"><span class="price">1,39&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/vegetarische-wuerstchen-380g.webp" alt="Vegetarische Würstchen, 380g" loading="lazy"></div>
         <div class="body"><h4>Vegetarische Würstchen, 380g</h4><div class="price-row"><span class="price">4,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/ingwer-shot-kurkuma-280ml.webp" alt="Ingwer Shot Kurkuma, 280ml" loading="lazy"></div>
         <div class="body"><h4>Ingwer Shot Kurkuma, 280ml</h4><div class="price-row"><span class="price">4,59&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/vegane-art-leberwurst-140g.webp" alt="Vegane Art Leberwurst, 140g" loading="lazy"></div>
         <div class="body"><h4>Vegane Art Leberwurst, 140g</h4><div class="price-row"><span class="price">3,69&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-tomatenketchup-450ml.webp" alt="bioladen* Tomatenketchup, 450ml" loading="lazy"></div>
         <div class="body"><h4>bioladen* Tomatenketchup, 450ml</h4><div class="price-row"><span class="price">3,29&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/gemuesesuppe-mit-huhn-400g.webp" alt="Gemüsesuppe mit Huhn, 400g" loading="lazy"></div>
         <div class="body"><h4>Gemüsesuppe mit Huhn, 400g</h4><div class="price-row"><span class="price">4,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/kartoffel-creme-suppe-400g.webp" alt="Kartoffel Creme Suppe, 400g" loading="lazy"></div>
         <div class="body"><h4>Kartoffel Creme Suppe, 400g</h4><div class="price-row"><span class="price">3,59&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/pfaelzer-leberwurst-160g.webp" alt="Pfälzer Leberwurst, 160g" loading="lazy"></div>
         <div class="body"><h4>Pfälzer Leberwurst, 160g</h4><div class="price-row"><span class="price">3,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/dinkel-toastbrot-400g.webp" alt="Dinkel Toastbrot, 400g" loading="lazy"></div>
         <div class="body"><h4>Dinkel Toastbrot, 400g</h4><div class="price-row"><span class="price">3,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/sauerkirschen-entsteint-560g.webp" alt="Sauerkirschen entsteint, 560g" loading="lazy"></div>
         <div class="body"><h4>Sauerkirschen entsteint, 560g</h4><div class="price-row"><span class="price">5,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <span class="sale-tag">Sale</span>
         <div class="shot"><img src="images/aprikose-fruchtgarten-225g.webp" alt="Aprikose Fruchtgarten, 225g" loading="lazy"></div>
         <div class="body"><h4>Aprikose Fruchtgarten, 225g</h4><div class="price-row"><span class="price">3,79&nbsp;&euro;</span><span class="price-old">3,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/manukahonig-halspastillen-cassis-30g.webp" alt="Manukahonig Halspastillen Cassis, 30g" loading="lazy"></div>
         <div class="body"><h4>Manukahonig Halspastillen Cassis, 30g</h4><div class="price-row"><span class="price">2,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/nocciolata-nuss-nougat-dark-milchfrei-250g.webp" alt="Nocciolata Nuss Nougat Dark, milchfrei 250g" loading="lazy"></div>
         <div class="body"><h4>Nocciolata Nuss Nougat Dark, milchfrei 250g</h4><div class="price-row"><span class="price">6,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/lammsbraeu-bio-alkoholfrei-0-33l.webp" alt="Lammsbräu Bio Alkoholfrei 0,33L" loading="lazy"></div>
         <div class="body"><h4>Lammsbräu Bio Alkoholfrei 0,33L</h4><div class="price-row"><span class="price">1,39&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-dinkel-penne-500g.webp" alt="bioladen* Dinkel Penne, 500g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Dinkel Penne, 500g</h4><div class="price-row"><span class="price">2,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/haferdrink-glutenfrei-0-75l.webp" alt="Haferdrink glutenfrei 0,75L" loading="lazy"></div>
         <div class="body"><h4>Haferdrink glutenfrei 0,75L</h4><div class="price-row"><span class="price">2,39&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/schwarzkuemmeloel-nativ-100ml.webp" alt="Schwarzkümmelöl nativ, 100ml" loading="lazy"></div>
         <div class="body"><h4>Schwarzkümmelöl nativ, 100ml</h4><div class="price-row"><span class="price">11,90&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-olivenoel-nativ-extra-1l.webp" alt="bioladen* Olivenöl nativ extra, 1L" loading="lazy"></div>
         <div class="body"><h4>bioladen* Olivenöl nativ extra, 1L</h4><div class="price-row"><span class="price">19,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <span class="sale-tag">Sale</span>
         <div class="shot"><img src="images/bioladen-tomatensauce-fuer-kinder-340g.webp" alt="bioladen* Tomatensauce für Kinder, 340g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Tomatensauce für Kinder, 340g</h4><div class="price-row"><span class="price">2,49&nbsp;&euro;</span><span class="price-old">2,79&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <span class="sale-tag">Sale</span>
         <div class="shot"><img src="images/bioladen-tomatensauce-arrabbiata-340g.webp" alt="bioladen* Tomatensauce Arrabbiata, 340g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Tomatensauce Arrabbiata, 340g</h4><div class="price-row"><span class="price">2,79&nbsp;&euro;</span><span class="price-old">2,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/cornflakes-375g.webp" alt="Cornflakes 375g" loading="lazy"></div>
         <div class="body"><h4>Cornflakes 375g</h4><div class="price-row"><span class="price">3,89&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/dattel-schokolade-natur-59-85g.webp" alt="Dattel Schokolade Natur 59%, 85g" loading="lazy"></div>
         <div class="body"><h4>Dattel Schokolade Natur 59%, 85g</h4><div class="price-row"><span class="price">4,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/now-black-cola-0-33l.webp" alt="now Black Cola 0,33L" loading="lazy"></div>
         <div class="body"><h4>now Black Cola 0,33L</h4><div class="price-row"><span class="price">1,39&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-pinienkerne-50g.webp" alt="bioladen* Pinienkerne, 50g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Pinienkerne, 50g</h4><div class="price-row"><span class="price">8,79&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-tomatenmark-concentrato-200g.webp" alt="bioladen* Tomatenmark Concentrato, 200g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Tomatenmark Concentrato, 200g</h4><div class="price-row"><span class="price">1,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/milchreis-rundkorn-weiss-500g.webp" alt="Milchreis Rundkorn weiß, 500g" loading="lazy"></div>
         <div class="body"><h4>Milchreis Rundkorn weiß, 500g</h4><div class="price-row"><span class="price">2,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/erdbeere-fruchtaufstrich-200g.webp" alt="Erdbeere Fruchtaufstrich, 200g" loading="lazy"></div>
         <div class="body"><h4>Erdbeere Fruchtaufstrich, 200g</h4><div class="price-row"><span class="price">4,29&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-haselnussmus-250g.webp" alt="bioladen* Haselnussmus, 250g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Haselnussmus, 250g</h4><div class="price-row"><span class="price">8,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/wiener-wuerstchen-380g.webp" alt="Wiener Würstchen 380g" loading="lazy"></div>
         <div class="body"><h4>Wiener Würstchen 380g</h4><div class="price-row"><span class="price">4,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-espresso-ganze-bohne-1kg.webp" alt="bioladen* Espresso ganze Bohne, 1kg" loading="lazy"></div>
         <div class="body"><h4>bioladen* Espresso ganze Bohne, 1kg</h4><div class="price-row"><span class="price">24,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-gebrannte-mandeln-suess-geroestet-130g.webp" alt="bioladen* Gebrannte Mandeln süß geröstet, 130g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Gebrannte Mandeln süß geröstet, 130g</h4><div class="price-row"><span class="price">5,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/hofgemuese-spinat-pinienkerne-135g.webp" alt="Hofgemüse Spinat Pinienkerne, 135g" loading="lazy"></div>
         <div class="body"><h4>Hofgemüse Spinat Pinienkerne, 135g</h4><div class="price-row"><span class="price">3,19&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/manukahonig-halspastillen-kraeuter-30g.webp" alt="Manukahonig Halspastillen Kräuter, 30g" loading="lazy"></div>
         <div class="body"><h4>Manukahonig Halspastillen Kräuter, 30g</h4><div class="price-row"><span class="price">2,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/omega-pink-leinoel-mixtur-100ml.webp" alt="Omega Pink Leinöl-Mixtur, 100ml" loading="lazy"></div>
         <div class="body"><h4>Omega Pink Leinöl-Mixtur, 100ml</h4><div class="price-row"><span class="price">7,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-ahornsirup-grad-c-250ml.webp" alt="bioladen* Ahornsirup Grad C, 250ml" loading="lazy"></div>
         <div class="body"><h4>bioladen* Ahornsirup Grad C, 250ml</h4><div class="price-row"><span class="price">6,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/leinoel-nativ-250ml.webp" alt="Leinöl nativ 250ml" loading="lazy"></div>
         <div class="body"><h4>Leinöl nativ 250ml</h4><div class="price-row"><span class="price">5,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/omega-orange-leinoel-mixtur-100ml.webp" alt="Omega Orange Leinöl-Mixtur, 100ml" loading="lazy"></div>
         <div class="body"><h4>Omega Orange Leinöl-Mixtur, 100ml</h4><div class="price-row"><span class="price">7,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/cantucci-alle-mandorle-150g.webp" alt="Cantucci alle mandorle 150g" loading="lazy"></div>
         <div class="body"><h4>Cantucci alle mandorle 150g</h4><div class="price-row"><span class="price">4,59&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/dattel-schokolade-himbeere-57-85g.webp" alt="Dattel Schokolade Himbeere 57%, 85g" loading="lazy"></div>
         <div class="body"><h4>Dattel Schokolade Himbeere 57%, 85g</h4><div class="price-row"><span class="price">5,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/zuckerruebensirup-im-becher-450g.webp" alt="Zuckerrübensirup im Becher, 450g" loading="lazy"></div>
         <div class="body"><h4>Zuckerrübensirup im Becher, 450g</h4><div class="price-row"><span class="price">4,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/haferlinge-schoko-125g.webp" alt="Haferlinge Schoko 125g" loading="lazy"></div>
         <div class="body"><h4>Haferlinge Schoko 125g</h4><div class="price-row"><span class="price">2,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/rindfleisch-gemuesesuppe-400g.webp" alt="Rindfleisch-Gemüsesuppe, 400g" loading="lazy"></div>
         <div class="body"><h4>Rindfleisch-Gemüsesuppe, 400g</h4><div class="price-row"><span class="price">4,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <span class="sale-tag">Sale</span>
         <div class="shot"><img src="images/erdbeere-fruchtgarten-225g.webp" alt="Erdbeere Fruchtgarten, 225g" loading="lazy"></div>
         <div class="body"><h4>Erdbeere Fruchtgarten, 225g</h4><div class="price-row"><span class="price">3,79&nbsp;&euro;</span><span class="price-old">3,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-tomatensauce-pizza-pasta-400g.webp" alt="bioladen* Tomatensauce Pizza &amp; Pasta, 400g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Tomatensauce Pizza &amp; Pasta, 400g</h4><div class="price-row"><span class="price">2,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-fruehstueckshonig-cremig-500g.webp" alt="bioladen* Frühstückshonig cremig, 500g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Frühstückshonig cremig, 500g</h4><div class="price-row"><span class="price">6,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/raps-kernoel-vielseitig-500ml.webp" alt="Raps Kernöl Vielseitig, 500ml" loading="lazy"></div>
         <div class="body"><h4>Raps Kernöl Vielseitig, 500ml</h4><div class="price-row"><span class="price">9,49&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/granatapfel-pur-0-75l.webp" alt="Granatapfel pur 0,75L" loading="lazy"></div>
         <div class="body"><h4>Granatapfel pur 0,75L</h4><div class="price-row"><span class="price">9,79&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/streich-s-drauf-basitom-135g.webp" alt="streich´s drauf Basitom, 135g" loading="lazy"></div>
         <div class="body"><h4>streich´s drauf Basitom, 135g</h4><div class="price-row"><span class="price">2,39&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/streich-s-drauf-papucchini-135g.webp" alt="streich´s drauf Papucchini, 135g" loading="lazy"></div>
         <div class="body"><h4>streich´s drauf Papucchini, 135g</h4><div class="price-row"><span class="price">2,39&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/streich-s-drauf-papayango-135g.webp" alt="streich´s drauf Papayango, 135g" loading="lazy"></div>
         <div class="body"><h4>streich´s drauf Papayango, 135g</h4><div class="price-row"><span class="price">2,39&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <span class="sale-tag">Sale</span>
         <div class="shot"><img src="images/berglinsen-500g.webp" alt="Berglinsen, 500g" loading="lazy"></div>
         <div class="body"><h4>Berglinsen, 500g</h4><div class="price-row"><span class="price">3,59&nbsp;&euro;</span><span class="price-old">3,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/schokoriegel-haselnuss-amaranth-25g.webp" alt="Schokoriegel Haselnuss Amaranth, 25g" loading="lazy"></div>
         <div class="body"><h4>Schokoriegel Haselnuss Amaranth, 25g</h4><div class="price-row"><span class="price">2,19&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-schwarzkuemmeloel-nativ-250ml.webp" alt="bioladen* Schwarzkümmelöl nativ, 250ml" loading="lazy"></div>
         <div class="body"><h4>bioladen* Schwarzkümmelöl nativ, 250ml</h4><div class="price-row"><span class="price">13,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/rindswiener-180g.webp" alt="Rindswiener 180g" loading="lazy"></div>
         <div class="body"><h4>Rindswiener 180g</h4><div class="price-row"><span class="price">4,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/gefluegelwuerstchen-im-glas-180g.webp" alt="Geflügelwürstchen im Glas 180g" loading="lazy"></div>
         <div class="body"><h4>Geflügelwürstchen im Glas 180g</h4><div class="price-row"><span class="price">4,99&nbsp;&euro;</span></div></div>
       </div>
-      <div class="prod-card">
+      <div class="prod-card more-item">
         <div class="shot"><img src="images/bioladen-cashews-geroestet-gesalzen-140g.webp" alt="bioladen* Cashews geröstet &amp; gesalzen, 140g" loading="lazy"></div>
         <div class="body"><h4>bioladen* Cashews geröstet &amp; gesalzen, 140g</h4><div class="price-row"><span class="price">5,49&nbsp;&euro;</span></div></div>
       </div>
+    </div>
+    <div class="show-more-wrap">
+      <button type="button" class="btn btn-ghost" id="showMoreBtn">
+        <svg class="icon"><use href="#i-sprout"></use></svg> Mehr Produkte anzeigen (118 weitere)
+      </button>
     </div>
     <div class="brand-row">
       <b>Marken, die wir führen:</b>
@@ -1244,6 +1252,15 @@
   document.querySelector('.burger')?.addEventListener('click', function(){
     var nav = document.querySelector('nav ul');
     if(nav){ nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex'; nav.style.flexDirection='column'; nav.style.position='fixed'; nav.style.top='4.4rem'; nav.style.right='1rem'; nav.style.background='rgba(250,246,236,.98)'; nav.style.border='1px solid #e1d8bf'; nav.style.borderRadius='14px'; nav.style.padding='1.2rem 1.6rem'; nav.style.gap='1rem'; nav.style.boxShadow='0 14px 30px -10px rgba(35,56,33,.25)'; }
+  });
+
+  document.getElementById('showMoreBtn')?.addEventListener('click', function(){
+    var grid = document.querySelector('.prod-grid');
+    var btn = this;
+    if(grid){
+      grid.classList.add('expanded');
+      btn.parentElement.remove();
+    }
   });
 </script>
 
