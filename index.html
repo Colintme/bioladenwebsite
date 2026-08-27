@@ -166,7 +166,7 @@
   }
   .offer-card .shot img{max-height:100%;max-width:100%;object-fit:contain;mix-blend-mode:multiply;}
   .offer-card .body{padding:1.3em 1.4em 1.5em;}
-  .offer-card h3{font-size:1rem;font-family:var(--font-body);font-weight:600;margin-bottom:.6em;min-height:2.6em;}
+  .offer-card h3{font-size:1rem;font-family:var(--font-body);font-weight:600;margin-bottom:.6em;min-height:2.6em;overflow-wrap:break-word;}
   .offer-card .price-row{display:flex;align-items:baseline;gap:.5em;}
   .offer-card .price{font-family:var(--font-display);font-weight:600;font-size:1.35rem;color:var(--terracotta);}
   .offer-card .price-old{font-size:.85rem;color:var(--muted);text-decoration:line-through;}
@@ -212,10 +212,11 @@
 
   /* ---------- Sortiment ---------- */
   .tag-cloud{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.6rem 0 2.4rem;}
-  .tag-cloud span{
+  .tag-cloud a{
     background:var(--cream);border:1px solid var(--line);border-radius:20px;padding:.5em 1.1em;
-    font-size:.8rem;color:var(--forest);
+    font-size:.8rem;color:var(--forest);font-weight:500;transition:background .2s,border-color .2s,color .2s;
   }
+  .tag-cloud a:hover{background:var(--forest-2);border-color:var(--forest-2);color:var(--white);}
   .prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;margin-bottom:1.8rem;}
   .prod-card.more-item{display:none;}
   .prod-grid.expanded .prod-card.more-item{display:block;}
@@ -226,7 +227,7 @@
   .prod-card .shot{aspect-ratio:1/1;background:var(--sage-2);display:flex;align-items:center;justify-content:center;padding:1em;}
   .prod-card .shot img{max-height:100%;max-width:100%;object-fit:contain;mix-blend-mode:multiply;}
   .prod-card .body{padding:1em 1.1em 1.2em;}
-  .prod-card h4{font-size:.86rem;font-weight:600;margin-bottom:.5em;min-height:2.3em;}
+  .prod-card h4{font-size:.86rem;font-weight:600;margin-bottom:.5em;min-height:2.3em;overflow-wrap:break-word;}
   .prod-card .price-row{display:flex;align-items:baseline;gap:.45em;}
   .prod-card .price{font-family:var(--font-display);font-weight:600;color:var(--forest-2);}
   .prod-card .price-old{font-size:.76rem;color:var(--muted);text-decoration:line-through;}
@@ -527,16 +528,27 @@
       <p>Ein kleiner Ausschnitt aus unserer großen Auswahl &mdash; Bio-Basics, Feinkost und Genuss für jeden Tag.</p>
     </div>
     <div class="tag-cloud">
-      <span>Brot &amp; Brötchen</span>
-      <span>Backwaren</span>
-      <span>Öle &amp; Essige</span>
-      <span>Konserven</span>
-      <span>Bier</span>
-      <span>Chips</span>
-      <span>Buchweizen</span>
-      <span>Apfelbutter</span>
-      <span>Kaffee &amp; Kakao</span>
-      <span>und viele mehr &hellip;</span>
+      <a href="kategorie/aetherische-oele.html">Ätherische Öle</a>
+      <a href="kategorie/backmischungen-backzutaten.html">Backmischungen &amp; Backzutaten</a>
+      <a href="kategorie/brot-toast.html">Brot &amp; Toast</a>
+      <a href="kategorie/brotaufstriche-saucen.html">Brotaufstriche &amp; Saucen</a>
+      <a href="kategorie/essig-oel-sirup.html">Essig Öl &amp; Sirup</a>
+      <a href="kategorie/fertiggerichte.html">Fertiggerichte</a>
+      <a href="kategorie/flocken-muesli-cornflakes.html">Flocken Müsli &amp; Cornflakes</a>
+      <a href="kategorie/fruechtetee.html">Früchtetee</a>
+      <a href="kategorie/getraenke.html">Getränke</a>
+      <a href="kategorie/getreideprodukte.html">Getreideprodukte</a>
+      <a href="kategorie/gewuerze.html">Gewürze</a>
+      <a href="kategorie/konserven.html">Konserven</a>
+      <a href="kategorie/kosmetik.html">Kosmetik</a>
+      <a href="kategorie/kraeutertee.html">Kräutertee</a>
+      <a href="kategorie/nudeln.html">Nudeln</a>
+      <a href="kategorie/nuesse.html">Nüsse</a>
+      <a href="kategorie/reis.html">Reis</a>
+      <a href="kategorie/suesswaren-knabberzeug-gebaeck.html">Süßwaren Knabberzeug &amp; Gebäck</a>
+      <a href="kategorie/tee-kaffee-kakao.html">Tee Kaffee &amp; Kakao</a>
+      <a href="kategorie/trockenfruechte.html">Trockenfrüchte</a>
+      <a href="kategorie/wasch-reinigungsmittel.html">Wasch- &amp; Reinigungsmittel</a>
     </div>
     <div class="prod-grid">
       <a class="prod-card" href="produkte/kraeutersalz-125g.html">
