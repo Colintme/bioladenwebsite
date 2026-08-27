@@ -2103,12 +2103,36 @@
 
   document.getElementById('showLessBtn')?.addEventListener('click', function(){
     var grid = document.querySelector('.prod-grid');
-    if(grid){
+    var lessBtn = document.getElementById('showLessBtn');
+    if(!grid){ return; }
+    // scroll up to the grid first, THEN collapse the extra cards once we've
+    // arrived — collapsing first shrinks the page and causes an abrupt jump
+    // before the smooth scroll even starts, which is the jolt being avoided here
+    if(lessBtn){ lessBtn.disabled = true; }
+    var collapse = function(){
       grid.classList.remove('expanded');
+      document.getElementById('showLessWrap').style.display = 'none';
+      document.getElementById('showMoreWrap').style.display = '';
+      if(lessBtn){ lessBtn.disabled = false; }
+    };
+    var already = Math.abs(grid.getBoundingClientRect().top) < 2;
+    if(already){
+      collapse();
+    } else if('onscrollend' in window){
+      var fired = false;
+      var done = function(){
+        if(fired){ return; }
+        fired = true;
+        window.removeEventListener('scrollend', done);
+        collapse();
+      };
+      window.addEventListener('scrollend', done);
       grid.scrollIntoView({behavior:'smooth', block:'start'});
+      setTimeout(done, 900); // safety fallback in case scrollend never fires
+    } else {
+      grid.scrollIntoView({behavior:'smooth', block:'start'});
+      setTimeout(collapse, 500);
     }
-    document.getElementById('showLessWrap').style.display = 'none';
-    document.getElementById('showMoreWrap').style.display = '';
   });
 </script>
 
